@@ -1,0 +1,16 @@
+div {
+  color: rgb(11, 53, 88);
+}
+
+h1 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 65px;
+}
+p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 31px;
+}

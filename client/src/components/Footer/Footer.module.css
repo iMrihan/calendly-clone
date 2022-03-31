@@ -1,0 +1,117 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  padding-left: 2rem;
+}
+
+.firstBox {
+  width: 85%;
+}
+.firstBoxInput {
+  width: 60%;
+  height: 8vh;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+.storeIcons {
+  display: flex;
+  width: 90%;
+  margin-top: 2rem;
+}
+.storeIcons > div {
+  cursor: pointer;
+  background-color: black;
+  margin: 0.5rem;
+  width: 25%;
+  color: white;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  padding: 0.2rem;
+  margin-top: 2rem;
+}
+.socialIcons > span {
+  margin: 0.5rem;
+  font-size: 24px;
+  color: black;
+}
+.socialIcons > span :hover {
+  color: rgb(78, 71, 71);
+}
+.secondBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.secondBox > div {
+  padding: 0.1rem;
+}
+.secondBox > div > h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.secondBox > div > p {
+  font-size: 16px;
+  color: rgb(95, 86, 86);
+  font-weight: 400;
+}
+.secondBox > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.finalBoxPtag {
+  margin-bottom: 2rem;
+  font-size: 10px;
+  margin-top: 4rem;
+  color: rgb(78, 71, 71);
+}
+.finalBoxPtag:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.finalPprivacy {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+/* for medium screen */
+@media screen and (max-width: 990px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
+  .finalPprivacy {
+    justify-content: start;
+  }
+}
+
+/* for small screen */
+@media screen and (max-width: 620px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
+  .secondBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .storeIcons > div {
+    cursor: pointer;
+    background-color: black;
+    margin: 0.5rem;
+    width: 34%;
+    color: white;
+    display: flex;
+    border-radius: 0.5rem;
+  }
+  .finalPprivacy {
+    justify-content: start;
+  }
+}
