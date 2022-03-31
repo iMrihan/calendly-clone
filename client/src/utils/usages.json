@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"title": "Create simple rules",
+		"description": "Let Calendly know your availability preferences and it’ll do the work for you."
+	},
+	{
+		"id": 2,
+		"title": "Share your link",
+		"description": "Send guests your Calendly link or embed it on your website."
+	},
+	{
+		"id": 3,
+		"title": "Get booked",
+		"description": "They pick a time and the event is added to your calendar."
+	}
+]

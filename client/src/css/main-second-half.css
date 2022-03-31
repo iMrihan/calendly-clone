@@ -1,0 +1,63 @@
+.do-more-h {
+	font-size: 3rem;
+	/* line-height: 1.25; */
+	font-weight: bold;
+	letter-spacing: -0.01em;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	padding-bottom: 48px;
+	margin: auto;
+	margin-top: 100px;
+}
+.do-more-p {
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1.33333;
+	font-weight: 500;
+	max-width: 675px;
+	margin: auto;
+}
+.section-work-flow {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+	gap: 20px;
+	justify-content: space-evenly;
+}
+.work-flow {
+	letter-spacing: -0.01em;
+	text-align: left;
+	color: rgb(102, 102, 102);
+	font-size: 0.9rem;
+	line-height: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.auto-reminder {
+	margin-top: 30px;
+	font-weight: 900;
+	letter-spacing: -0.01em;
+	text-align: left;
+	color: rgb(0, 0, 0);
+	font-size: 2.36875rem;
+	line-height: 1.2;
+	hyphens: initial;
+}
+.meeting-work-flow {
+	margin-top: 30px;
+
+	letter-spacing: -0.01em;
+	text-align: left;
+	color: rgb(0, 0, 0);
+	font-size: 1.125rem;
+	line-height: 2;
+	font-weight: 500;
+	hyphens: initial;
+}
+.bottom-div {
+	border: 1px dotted grey;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 100px;
+}
