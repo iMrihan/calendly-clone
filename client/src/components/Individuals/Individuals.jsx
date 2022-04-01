@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import "./Individuals.module.css";
 
 export const Individuals = () => {
+
   const arrw = ">";
   return (
     <div className="individuals-container">
