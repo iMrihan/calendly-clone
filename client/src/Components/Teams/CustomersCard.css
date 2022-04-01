@@ -1,0 +1,31 @@
+.cards {
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+#card {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: grid;
+	width: 95%;
+	margin: 5% auto;
+	gap: 2%;
+}
+
+#card > img {
+	min-height: 10px;
+	width: 100%;
+}
+#card > p {
+	padding: 8% 4% 7% 6%;
+	font-size: 26px;
+	line-height: 1.4;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+#card > h5 {
+	padding: 0% 6%;
+	color: #006bff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	margin-bottom: 8%;
+}

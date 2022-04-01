@@ -1,0 +1,13 @@
+h1 {
+	color: #1d344b;
+	font-size: 220%;
+	margin: 5% auto;
+	text-align: center;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: '80%';
+	margin: 'auto';
+	font-family: 'Roboto', sans-serif;
+}
