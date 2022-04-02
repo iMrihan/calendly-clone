@@ -1,0 +1,16 @@
+.box {
+	/* background-color: #f8f8f8; */
+	background-color: red;
+	width: 100%;
+	font-family: 'Roboto';
+}
+.info {
+	width: 70%;
+	margin: auto;
+}
+
+.info {
+	margin: auto;
+	text-align: center;
+	line-height: 1.7;
+}

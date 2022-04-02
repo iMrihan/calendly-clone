@@ -24,9 +24,9 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href="" class="list_element ">
+              <Link to="/for-teams" class="list_element ">
                 Teams
-              </a>
+              </Link>
             </li>
             <li>
               <a href="" class="list_element ">
