@@ -1,0 +1,252 @@
+
+.mainContainerActive > * {
+  filter: blur(1px);
+}
+.titleBox {
+  width:90%;
+  height: auto;
+  padding: 0.5rem 0rem 0.5rem 8rem;
+  box-shadow: rgba(187, 187, 199, 0.25) 0px 2px 5px -1px, rgba(139, 125, 125, 0.3) 0px 1px 3px 2px;
+}
+
+.titleBox > h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39px;
+  font-style: normal;
+}
+.sheduleBox {
+  width: 100%;
+}
+.sheduleBox > div > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-style: normal;
+  color: #1a1a1a;
+}
+.sheduleBox > div {
+  width: 80%;
+  margin: auto;
+}
+.sheduleBoxDiv {
+}
+
+.workingBoxEvent {
+  width: 100%;
+  display: flex;
+  height: 10vh;
+}
+.workingHoursBoxIcon {
+  width: 8rem;
+  height: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0.5px solid rgb(96, 96, 89);
+}
+.workingHoursBoxIcon > h4 {
+  transform: translate(1.3rem, -2.6rem);
+}
+.iconCal {
+  color: rgb(0, 107, 255);
+  font-size: 15px;
+}
+.newScheduleBox {
+  width: 8rem;
+  height: 1rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  border: 0.5px solid rgb(96, 89, 89);
+  margin-left: 2rem;
+}
+.newScheduleBox > h4 {
+  transform: translate(1.3rem, -2.6rem);
+}
+.activeScheduledetailBox {
+  border: 1px solid black;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  height: auto;
+  padding: 1rem;
+}
+.defaultWorkingHoursMainBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
+  line-height: 1px;
+}
+.defaultWorkingHoursMainBox > div {
+}
+.defaultWorkingHoursMainBox > div > h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.defaultWorkingHoursMainBox > div > p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(92, 92, 86);
+}
+.eventType {
+  display: flex;
+}
+
+.eventType > div :nth-child(1) {
+  font-size: 14px;
+  color: rgb(106, 106, 98);
+}
+
+.eventType > div {
+  margin: 0rem 1rem;
+  cursor: pointer;
+}
+.listViewBox {
+  border: 1px solid black;
+  width: fit-content;
+  margin-left: 40%;
+  border-radius: 0.1rem;
+  background-color: rgb(246, 248, 249);
+  cursor: pointer;
+}
+.listViewBox > span {
+  padding: 0.3rem;
+}
+.listViewBox > span > p {
+  font-size: 15px;
+  font-weight: 700;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem;
+}
+.listViewBox2 {
+  cursor: pointer;
+  width: fit-content;
+  margin-left: 1rem;
+}
+.listViewBox2 > span {
+  padding: 0.3rem;
+
+}
+.listViewBox2 > span > p {
+  font-size: 15px;
+  font-weight: 700;
+  left: 0;
+  margin: 0rem;
+  padding: 0.5rem;
+
+}
+
+.activeBoxBody{
+  width: 99.3%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.2rem;
+  border:1px solid rgb(65, 57, 57) ;
+}
+.activeBoxBodyDiv{
+  display: flex;
+  border-bottom: 1px solid rgb(85, 79, 79);
+  margin: 0rem 1rem;
+}
+.activeBoxBodyDiv > *{
+  margin: 0.5rem;
+}
+.timeOptionTag{
+  margin-left: 1rem;
+  width: 6vw;
+  height: 6vh;
+}
+.activeBoxBody1{
+  padding: 1rem;
+}
+.activeBoxBody1 > div{
+  padding: 0.5rem;
+}
+.activeBoxBody2{
+  border-left:  1px solid rgb(85, 79, 79);
+  padding: 1rem;
+}
+
+.activeBoxBody2>button{
+  width: 95%;
+  height: 6vh;
+  background-color: transparent;
+  border: 1px solid rgb(0, 107, 255) ;
+  color: rgb(0, 107, 255);
+  border-radius: 2rem;
+}
+
+.deleteIcon{
+  margin: 2rem 0rem 0rem 2rem;
+  font-size: 22px;
+}
+.deleteIcon > *:hover{
+  background-color: #e8dede;
+  cursor: pointer;
+}
+.plusAndCopyIcon{
+  margin: 2rem 0rem 0rem 8rem;
+  font-size: 22px;
+}
+.plusAndCopyIcon > *:hover{
+  background-color: #e8dede;
+  cursor: pointer;
+}
+
+.unavailableTextBox{
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #8b8383;
+  margin-left: 5rem;
+  padding: 0.6rem;
+}
+
+.popupDiv{
+  height: 40vh;
+  width: 80vh;
+  transform: translate(60%, -290%) scale(0);
+  z-index: 2;
+  background-color: white;
+}
+.popupDivActive{
+  height: 40vh;
+  width: 80vh;
+  border-radius: 0.5rem;
+  transition: all 300ms ease-in-out;
+  transform: translate(90%, -350%) scale(1);
+  background-color: white;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+} 
+
+.popupDivActive>div>input{
+  width: 80%;
+  height: 6vh;
+  padding: 0rem 2rem;
+  margin: 0.5rem;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(0, 107, 255);
+}
+.buttonsDiv{
+  padding: 0.5rem;
+}
+.buttonsDiv > button{
+  background-color: transparent;
+  border: 0.5px solid  rgb(0, 107, 255);
+  border-radius: 4rem;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  margin: 0rem 3rem ;
+  cursor: pointer;
+}
+.buttonsDiv :nth-child(1){
+  border: 0.5px solid  rgb(66, 68, 71);
+}
+.buttonsDiv :nth-child(2){
+background-color: rgb(0, 107, 255) ;
+color: white;
+}
