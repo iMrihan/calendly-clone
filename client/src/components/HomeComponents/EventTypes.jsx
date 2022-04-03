@@ -11,10 +11,14 @@ import CardContent from '@mui/material/CardContent';
 import SettingsApplicationsRoundedIcon from '@mui/icons-material/SettingsApplicationsRounded';
 import Link from '@mui/material/Link';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-
+import {useState, useEffect} from "react"
+import axios from 'axios'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+  
+
+//  console.log(data)
 
   return (
     <div
@@ -48,12 +52,26 @@ function a11yProps(index) {
 
 export const BasicTabs =() =>{
   const [value, setValue] = React.useState(0);
-
-
+  const token = localStorage.getItem('userToken') || null ;
+  
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    getData();
   };
+  const [data,setData] = useState([]);
+
+  // useEffect(() => {
+    
+  //       getData();
+  // },[])
+  
+  function getData() {
+       axios.get("http://localhost:8080/events").then(({data}) =>{
+         setData([...data]);
+       })
+    
+  }
 
   return (
     <Box sx={{ width: '100%'}} >
@@ -135,7 +153,19 @@ export const BasicTabs =() =>{
 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        
+        <div style={{ display:'grid',gridTemplateColumns: 'repeat(3,25%)', gridGap: '10px'}}>
+            {data.map(({summary,description,location,startDateTime,endDateTime,id}) =>{
+              return (
+                <div key={id}>
+                 <p>{summary}</p> 
+                 <p>{description}</p> 
+                 <p>{location}</p> 
+                 <p>{startDateTime}</p> 
+                 <p>{endDateTime}</p> 
+                </div>
+              )
+            })}
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Workflows

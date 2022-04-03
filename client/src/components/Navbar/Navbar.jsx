@@ -13,47 +13,47 @@ export const Navbar = () => {
                 height="40px"
                 width="auto"
                 alt="Calendly logo"
-                class="sc-xcu1of-0 lEJUy"
+                className="sc-xcu1of-0 lEJUy"
               ></img>
             </div>
           </Link>
           <ul className="list_container">
             <li>
-              <Link to="/for-individuals" class="list_element" >
+              <Link to="/for-individuals" className="list_element" >
                 Individuals
               </Link>
             </li>
             <li>
-              <a href="" class="list_element ">
+              <Link to="/team" className="list_element ">
                 Teams
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" class="list_element ">
+              <a href="" className="list_element ">
                 Enterprise
               </a>
             </li>
             <li>
-              <a href="" class="list_element ">
+              <a href="" className="list_element ">
                 Product
               </a>
             </li>
             <li>
-              <a href="" class="list_element ">
+              <a href="" className="list_element ">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="" class="list_element ">
+              <a href="" className="list_element ">
                 Resources
               </a>
             </li>
           </ul>
           <ul className="navbar_right_container">
             <li>
-              <a href="" class="list_element ">
+              <Link to="/login" className="list_element ">
                 Log In
-              </a>
+              </Link>
             </li>
             <li>
               <div className="list_button_container">

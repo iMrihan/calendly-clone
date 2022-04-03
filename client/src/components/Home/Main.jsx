@@ -4,8 +4,18 @@ import "../../css/main-second-half.css";
 import "../../css/reset.css";
 import client from "../../utils/client.json";
 import usages from "../../utils/usages.json";
+import {NavigateLink} from "react-router-dom"
+import StartComp from "../StarComp/StartComp"
+
+
 
 export default function Main() {
+    // window.location.reload(false);
+	const ref = localStorage.getItem("ref")
+	if(ref == "true"){
+		 localStorage.clear();
+		 window.location.reload(false);
+	}
 	return (
 		<main className="main">
 			{/* <----------------------section-1-------Homepage-Hero-Section-----------------> */}

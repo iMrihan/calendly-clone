@@ -18,7 +18,7 @@ export const Form = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-    
+        
         axios.post('http://localhost:4000/api/create-event', {
           summary,
           description,
@@ -32,6 +32,15 @@ export const Form = () => {
     
         })
         .catch(err => { console.log(err.message) });
+
+        axios.post("http://localhost:8080/events",{
+          summary,
+          description,
+          location,
+          startDateTime,
+          endDateTime
+        })
+
       }
 
 
@@ -94,7 +103,7 @@ export const Form = () => {
            onChange={e => setEndDateTime(e.target.value)}
            />
            <br />
-          <button type="submit">Create Event</button>
+          <input type="submit" value="submit"/>
         </form>
       </div>
 
