@@ -1,0 +1,64 @@
+.red {
+	color: red;
+	font-style: italic;
+}
+.navbarConainer {
+	border-bottom: 1px solid rgba(218, 218, 218, 0.466);
+}
+.navbar2 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+	width: 65%;
+	padding-bottom: 1%;
+	margin: auto;
+}
+.navbar {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+	display: flex;
+	width: 65%;
+	margin: auto;
+	height: 60px;
+	align-items: center;
+}
+.menuButtons {
+	display: flex;
+	margin-left: 140%;
+	width: 100%;
+	font-size: smaller;
+	font-family: 'Mulish';
+	gap: 7%;
+}
+.logo > img {
+	margin-right: 0px;
+	width: 50%;
+}
+.textButton {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'mulish';
+	font-size: large;
+	margin-top: 4%;
+	letter-spacing: 1.2px;
+	margin-bottom: 3%;
+}
+.text2 {
+	display: flex;
+	width: 40%;
+	gap: 3%;
+	font-size: small;
+}
+.createButton {
+	background-color: #0069ff;
+	color: aliceblue;
+	/* padding: 5% 10% 5% 10%; */
+	padding-left: 25%;
+	padding-right: -25%;
+	margin-left: -80%;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	padding-right: 15%;
+	border-radius: 50px;
+	font-size: x-small;
+}
+.textButton {
+	align-items: center;
+}
