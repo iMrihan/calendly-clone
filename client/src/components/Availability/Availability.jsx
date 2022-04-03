@@ -172,7 +172,9 @@ export const Availability = () => {
             </p>
           </div>
           <div className={AvailabilityCSS.sheduleBoxDiv}>
-            <h5>SCHEDULE</h5>
+            <h5 style={{
+              padding:"1rem"
+            }}>SCHEDULE</h5>
 
             <div className={AvailabilityCSS.workingBoxEvent}>
               <div
@@ -203,14 +205,16 @@ export const Availability = () => {
               <div className={AvailabilityCSS.defaultWorkingHoursMainBox}>
                 <div>
                   <h3>Working hours</h3>
-                  <p>
+                  <p style={{
+                      margin:"1rem"
+                    }}>
                     <AiFillStar
                       style={{
                         color: "rgb(232, 202, 11)",
                         fontSize: "18px",
                       }}
                     ></AiFillStar>{" "}
-                    <span>default schedule</span>
+                    <span >default schedule</span>
                   </p>
                 </div>
                 <div>
@@ -267,7 +271,9 @@ export const Availability = () => {
                         display: "flex",
                       }}
                     >
-                      <BiListUl />
+                      <BiListUl style={{
+                        paddingTop:"0.5rem"
+                      }}></BiListUl>
                       <p>List view</p>
                     </span>
                   </div>
@@ -278,7 +284,9 @@ export const Availability = () => {
                         display: "flex",
                       }}
                     >
-                      <AiTwotoneCalendar />
+                      <AiTwotoneCalendar style={{
+                        paddingTop:"0.5rem"
+                      }}></AiTwotoneCalendar>
                       <p>Calender view</p>
                     </span>
                   </div>
@@ -803,8 +811,18 @@ export const Availability = () => {
               </div>
 
               <div className={AvailabilityCSS.activeBoxBody2}>
-                <h3>Add date overrides</h3>
-                <p>
+                <h3 style={
+                  {
+                    fontWeight: "900",
+                    fontSize: "20px",
+                  }
+                }>Add date overrides</h3>
+                <p style={
+                  {
+                    fontWeight: "500",
+                    fontSize: "14px",
+                  }
+                }>
                   Add dates when your availability changes from your weekly
                   hours
                 </p>

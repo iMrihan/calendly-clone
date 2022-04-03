@@ -2,6 +2,15 @@
 .mainContainerActive > * {
   filter: blur(1px);
 }
+.mainContainerActive {
+  margin-top: 10rem;
+}
+.mainContainer {
+  margin-top: 10rem;
+}
+.mainContainer > * {
+  margin-top: 2rem ;
+}
 .titleBox {
   width:90%;
   height: auto;
@@ -29,8 +38,6 @@
   width: 80%;
   margin: auto;
 }
-.sheduleBoxDiv {
-}
 
 .workingBoxEvent {
   width: 100%;
@@ -46,6 +53,7 @@
   border: 0.5px solid rgb(96, 96, 89);
 }
 .workingHoursBoxIcon > h4 {
+  margin-top: 1.5rem;
   transform: translate(1.3rem, -2.6rem);
 }
 .iconCal {
@@ -62,6 +70,7 @@
   margin-left: 2rem;
 }
 .newScheduleBox > h4 {
+  margin-top: 1.5rem;
   transform: translate(1.3rem, -2.6rem);
 }
 .activeScheduledetailBox {
@@ -103,21 +112,14 @@
 }
 .listViewBox {
   border: 1px solid black;
-  width: fit-content;
   margin-left: 40%;
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   background-color: rgb(246, 248, 249);
   cursor: pointer;
 }
-.listViewBox > span {
-  padding: 0.3rem;
-}
+
 .listViewBox > span > p {
   font-size: 15px;
-  font-weight: 700;
-  left: 0;
-  margin: 0;
-  padding: 0.5rem;
 }
 .listViewBox2 {
   cursor: pointer;
@@ -125,16 +127,10 @@
   margin-left: 1rem;
 }
 .listViewBox2 > span {
-  padding: 0.3rem;
 
 }
 .listViewBox2 > span > p {
   font-size: 15px;
-  font-weight: 700;
-  left: 0;
-  margin: 0rem;
-  padding: 0.5rem;
-
 }
 
 .activeBoxBody{
