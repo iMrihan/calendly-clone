@@ -1,12 +1,9 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
-import { GoogleLogin } from 'react-google-login';
-import GoogleIcon from '@mui/icons-material/Google';
-import Button from '@mui/material/Button';
 import {useState} from 'react'
 import LoginButton from '../LoginButton/LoginButton';
-import {Link} from "react-router-dom"
+
 
 export const GoogleComp=()=> {
  
